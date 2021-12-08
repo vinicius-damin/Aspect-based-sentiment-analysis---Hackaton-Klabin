@@ -139,5 +139,5 @@ def sentiment_pt(texto):
 
 
 # In[ ]:
-
+#print(sentiment_pt('amava o café'))
 # %%
