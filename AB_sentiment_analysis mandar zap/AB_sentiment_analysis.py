@@ -8,7 +8,7 @@ import spacy
 from googletrans import Translator
 
 translator = Translator()
-#é preciso fazer python -m spacy download en_core_web_sm antes da proxi
+#é preciso fazer python -m spacy download en_core_web_sm antes da proxima linha
 nlp=spacy.load("en_core_web_sm")
 
 
@@ -22,8 +22,9 @@ neg=neg_txt[1285:].split("\n")
 
 
 #recebe um texto e retorna um dicionário com os substantivos e o sentimento deles
+
 def feature_sentiment(Frase):
-    
+#essa funcao foi retirada da internet
     text=translator.translate(Frase,src='pt', dest='en').text
 
     sent_dict = dict()
@@ -101,7 +102,7 @@ def feature_sentiment(Frase):
 # In[9]:
 
 
-print(feature_sentiment("Gostei do meu chefe mas odiei meu sálario"))
+#print(feature_sentiment("Gostei do meu chefe mas odiei meu sálario"))
 
 
 # In[ ]:
